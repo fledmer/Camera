@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sprite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/makePhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Сделать фото"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:text="Сохранить"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addSpotButton"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
+        android:text="Добавить пяточек"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/canvasView"
+        android:layout_width="363dp"
+        android:layout_height="473dp"
+        android:backgroundTintMode="src_atop"
+        android:foregroundTintMode="src_over"
+        android:pointerIcon="cell"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="138dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="1dp"
+        android:text="Поделится"
+        app:layout_constraintBottom_toTopOf="@+id/addSpotButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
